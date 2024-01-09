@@ -18,6 +18,7 @@
                     <th>Project</th>
                     <th>Technologies</th>
                     <th>Action</th>
+                    <th> <a><a href="{{ route('admin.projects.create') }}" class="btn btn-primary">Create</a></th>
                 </tr>
             </thead>
             <tbody>
@@ -29,7 +30,7 @@
 
                     </td>
                     <td>{{ $project->content }}</td>
-                    <td>{{ $project->my_project }}</td>
+                    <td>{{ isset($project->type) ? $project->type->name : '---' }}</td>
                     <td>{{ $project->technologies }}</td>
                     <td>
                         <a href="{{ route('admin.projects.edit', $project) }}" class="btn btn-primary">Edit</a>

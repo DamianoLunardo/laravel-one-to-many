@@ -50,6 +50,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li>
                         <!-- Authentication Links -->
                         @guest
                         <li class="nav-item">
